@@ -1,0 +1,95 @@
+section{
+    display:flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    h2, h3{
+        text-align: center;
+    }
+    h3{
+        color: $lightAccent;
+    }
+    background-color: #211A3B;
+    opacity: 1;
+    background-image: radial-gradient(#352960 0.8px, #211A3B 0.8px);
+    background-size: 16px 16px;
+}
+
+
+article{
+    border: solid 5px $lightAccent;
+    margin: 5px 0px;
+    padding: 5px;
+    background-color: #211A3B;
+    opacity: 1;
+    background-image:  radial-gradient(#352960 0.8px, transparent 0.8px), radial-gradient(#352960 0.8px, #211A3B 0.8px);
+    background-size: 32px 32px;
+    background-position: 0 0,16px 16px;
+}
+
+
+
+#display{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+img{
+    width:100%;
+    height:100%;
+    background-color: $lightAccent;
+    opacity: 1;
+    background: radial-gradient(circle, transparent 20%, #D09079 20%, #D09079 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #D09079 20%, #D09079 80%, transparent 80%, transparent) 40px 40px, linear-gradient(#a9725e 3.2px, transparent 3.2px) 0 -1.6px, linear-gradient(90deg, #a9725e 3.2px, #D09079 3.2px) -1.6px 0;
+    background-size: 80px 80px, 80px 80px, 40px 40px, 40px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px;
+}
+
+
+button{
+    @include buttonStyling;
+}
+
+button:hover{
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+}
+
+button:disabled{
+    background-image: linear-gradient(92.88deg, rgb(175, 175, 175) 9.16%, #868686 43.89%, #575757 64.72%);
+}
+
+#score{
+    div{
+        display: flex;
+    }
+    h4{
+        display: inline;
+    }
+    p{
+        display: inline;
+        text-align: right;
+    }
+    
+}
+
+#guess{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+
+}
+
+#letterSelect{
+    display: grid;
+    flex: 1;
+    gap: 5px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#guessInput{
+    background-color: $lightShades;
+    border-radius: 8px;
+    border: solid 5px $mainColor;
+}
