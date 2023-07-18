@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Final Project: Hangman</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="scripts/jquery.js" defer="defer"></script>
+        <script src="scripts/javascript.js" defer="defer"></script>
+
+       
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Final Project: Nicholas Solomon</h1>
+            </header>
+            <main>
+                <section>
+                    <h2 id="sectionTitle">Hangman</h2>
+                    <article id="score">
+                        <h3>Score:</h3>
+                        <div>
+                            <h4>Total Guesses:</h4>
+                            <p id="totalGuesses"></p>
+                        </div>
+                        <div>
+                            <h4>Mistakes Remaining:</h4>
+                            <p id="mistakesRemaining"></p>
+                        </div>
+                    </article>
+                    <article id="display">
+                        <img src="images/hangman-0.webp" alt="" id="hangmanImage">
+                        <p id="guessDisplay"></p>
+                    </article>
+                    <article id="guess">
+                        <h3>Guess:</h3>
+                        <div id="hintCont">
+                            <h4>Hint:</h4>
+                            <p id="hint"></p>
+                        </div>
+                        <h4>Choose A Letter:</h4>
+                        <div id="letterSelect">
+                        </div>
+                        <h4>Try To Guess The Word:</h4>
+                        <div id="wordGuess">
+                            <input type="text" id="guessInput">
+                            <button type="button" id="tryGuessButton">Try Guess</button>
+                        </div>
+                    </article>
+                    <div id="popUp" style="display:none;">
+                        <h2 id="popUpTitle"></h2>
+                        <p id="popUpDesc"></p>
+                        <button type="button" id="playAgain" style="display:none;">Play Again</button>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <h6>Nicholas Solomon, A01074191</h6>
+                <h6>COMP2132</h6>
+            </footer>
+        </div>
+    </body>
+</html>
