@@ -1,0 +1,17 @@
+@mixin buttonStyling {
+    background-image: linear-gradient(92.88deg, $mainColor 9.16%, #6d74ca 43.89%, #795db9 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    color: $lightShades;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    height: auto;
+    width: auto;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
